@@ -13,6 +13,7 @@ body {
 }
 
 .modal-bg {
+	z-index: 1;
 	height: 100%;
 	width: 50%;
 	border: 1px solid rgba(197,226,250,0.5);
@@ -20,7 +21,14 @@ body {
 	background-color: #FFFFFF;
 	padding-bottom: 40px;
 	box-shadow: 0 5px 10px 0 rgba(7,112,200,0.1), 0 10px 20px 0 rgba(5,79,140,0.05);
+
 }
+@media (max-width: 640px) {
+	.modal-bg {
+	  position: relative;
+	  width: 85%;
+	}
+  }
 .icon-exit {
 	height: 40px;
 	width: 40px;
@@ -187,3 +195,4 @@ body {
 .text-center {
     margin-bottom: 0px;
 }
+
