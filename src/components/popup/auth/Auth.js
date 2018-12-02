@@ -3,6 +3,7 @@ import PopupLogin from './PopupLogin';
 import PopupRegister from './PopupRegister';
 
 
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -30,7 +31,7 @@ class App extends Component {
  
   render() {
     return (
-      <div className="App">
+      <div className="App" style="z-index:999" >
         <button onClick={this.toggleLogin}>
           MASUK
         </button>
