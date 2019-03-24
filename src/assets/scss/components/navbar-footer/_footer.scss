@@ -1,10 +1,3 @@
-*{
-    margin: 0; 
-}
-body{
-    box-sizing: border-box;
-    font-family: 'Scada', sans-serif;
-}
 footer{
     height: 190px;
 }
@@ -69,7 +62,7 @@ footer{
     font-size: 15px;
 }
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 786px){
     .foot-info{
         display: grid;
         grid-template-areas: "a a a a a" "b b b b b" "c c c c c" "d d d d d";
@@ -79,6 +72,9 @@ footer{
     .foot-logo{
         grid-area: a;
     }
+    .foot-logo img{
+        width: 170px;
+    }
     .foot-list-1 {
         grid-area: b;
     }
@@ -87,13 +83,9 @@ footer{
     }
     .foot-app{
         grid-area: d;
+        text-align: center;
     }
-    .foot-app-cta{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: auto;
-        justify-content: space-between;
+    .foot-app-cta img{
     }
     .foot-list-1 li{
         text-align: center;

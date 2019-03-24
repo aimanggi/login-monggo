@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
-
+import {
+    Link
+  } from "react-router-dom";
+  
 class LihatDetail extends Component {
     render(){
         return(
-            <button type="button" class="btn btn-outline-primary">LIHAT INVESTASI</button>
+           <Link to='/detail-invest'><button type="button" className="btn btn-card-detail">Detail</button></Link>
         )
     }
 }

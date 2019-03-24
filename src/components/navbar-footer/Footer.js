@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import {
+    NavLink
+} from "react-router-dom";
 import Logo from '../page/Logo';
 import appStore from '../img/App Store.svg';
 import playStore from '../img/Play Store.svg';
@@ -12,19 +15,19 @@ class Footer extends Component {
                         <Logo />
                     </div>
                     <ul className="foot-list-1">
-                        <li><a href="#">Investasi</a></li>
-                        <li><a href="#">Cara Kerja</a></li>
-                        <li><a href="#">Tentang Kami</a></li>
+                        <li><NavLink to="/product-invest">Investasi</NavLink></li>
+                        <li><NavLink to="/">Cara Kerja</NavLink></li>
+                        <li><NavLink to="/">Tentang Kami</NavLink></li>
                     </ul>
                     <ul className="foot-list-2">
-                        <li><a href="#">Bantuan</a></li>
-                        <li><a href="#">Kontak Kami</a></li>
+                        <li><NavLink to="/">Bantuan</NavLink></li>
+                        <li><NavLink to="/">Kontak Kami</NavLink></li>
                     </ul>
                     <div className="foot-app">
                         <div className="foot-app-description">Download Aplikasi Smartphone</div>
                         <div className="foot-app-cta">
-                            <a href="#"><img src={appStore} alt=""/></a>
-                            <a href="#"><img src={playStore} alt=""/></a>
+                            <NavLink to="/"><img src={appStore} alt="App Store"/></NavLink>
+                            <NavLink to="/"><img src={playStore} alt="Play Store"/></NavLink>
                         </div>
                     </div>
                 </div>

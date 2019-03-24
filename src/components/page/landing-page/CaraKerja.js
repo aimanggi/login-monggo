@@ -3,7 +3,7 @@ import Invest from '../../img/Invest.svg';
 import Cow from '../../img/Cow.svg';
 import Pay from '../../img/Pay.svg';
 import Result from '../../img/Result.svg';
-import LihatDetail from '../../btn/LihatDetail';
+import LihatInvestasi from '../../btn/LihatInvestasi';
 
 class CaraKerja extends Component {
     render(){
@@ -37,7 +37,7 @@ class CaraKerja extends Component {
                     </span>
                 </div>
                 <div className="butt">
-                    <LihatDetail />
+                    <LihatInvestasi />
                 </div>
             </div>
         )

@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
+import {
+    NavLink
+  } from "react-router-dom";
 import imgLogo from '../img/monggoLogo.png';
 
 class Logo extends Component {
     render(){
         return(
-            <a href="#">
+            <NavLink to="/">
                 <img src={imgLogo} alt="" />
-            </a>
+            </NavLink>
         )
     }
 }

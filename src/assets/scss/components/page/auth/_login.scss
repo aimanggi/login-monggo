@@ -1,44 +1,29 @@
-body {
-    margin: 0;
-    font-family: 'Scada', sans-serif;
-}
-
-
-* {
-    box-sizing: border-box;
-}
-
-.login {
-	margin-top: 5%;
-}
-
-.modal-bg {
-	z-index: 1;
-	height: 100%;
+.modal-bga {
+	position: absolute;
+	top: 15%;
+	z-index: 5001;
+	height: 500px;
 	width: 50%;
 	border: 1px solid rgba(197,226,250,0.5);
 	border-radius: 10px;
-	background-color: #FFFFFF;
-	padding-bottom: 40px;
+	background-color:  rgba(255, 255, 255, 0.8);
 	box-shadow: 0 5px 10px 0 rgba(7,112,200,0.1), 0 10px 20px 0 rgba(5,79,140,0.05);
 
 }
 @media (max-width: 640px) {
-	.modal-bg {
-	  position: relative;
-	  width: 85%;
+	.modal-bga {
+		width: 85%;
+		position: absolute;
+		  top: 5%;
+		  
 	}
   }
 .icon-exit {
-	height: 40px;
-	width: 40px;
 	border: 1px solid rgba(197,226,250,0.5);
 	border-radius: 50%;
 	background-color: #FFFFFF;
 	box-shadow: 0 5px 10px 0 rgba(7,112,200,0.1), 0 10px 20px 0 rgba(5,79,140,0.05);
-	float: right;
-	margin: 10px 10px 0 0;
-	padding: 2px;
+	
 	border: 0;
 }
 
@@ -69,8 +54,7 @@ body {
 	font-weight: 500;
 	line-height: 48px;
     text-align: center;
-	margin-bottom: 72px;
-	margin-left: 50px;
+	margin-bottom: 40px;
 	
 }
 
@@ -153,7 +137,7 @@ body {
 	width: 33%;
 	border-radius: 30px;
     background: linear-gradient(45deg, #0A3565 0%, #1782D9 100%);
-    margin: 0 33% 40px 33%;
+    margin: 0 33% 20px 33%;
     border: 0;
 }
 
@@ -172,19 +156,23 @@ body {
 }
 
 .forget-link {
-	height: 22px;
-	width: 266px;
+	display: inline;
 	color: #0770C8;
 	font-family: 'Scada', sans-serif;
 	font-size: 18px;
     line-height: 21px;
     text-align: center;
-    margin-bottom: 0px;
+}
+
+.forget-link:hover {
+	font-weight: bold;
+	color: #0770C8; 
+	background-color: transparent
 }
 
 .reg-link {
-	height: 22px;
-	width: 266px;
+	display: inline;
+	
 	color: #0770C8;
 	font-family: 'Scada', sans-serif;
 	font-size: 18px;
@@ -192,7 +180,32 @@ body {
 	text-align: center;
 }
 
+.reg-link:hover {
+	font-weight: bold;
+	color: #0770C8; 
+	background-color: transparent
+}
+
 .text-center {
     margin-bottom: 0px;
+}
+
+.text-center.bottom {
+    margin-bottom: 10px;
+}
+
+.redirect-home {
+	margin-top: 620px;
+	color: #FFFFFF; 
+}
+
+.redirect-home:hover {
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: transparent
+}
+
+.login-home {
+	margin: 0 33% 20px 33%;;
 }
 

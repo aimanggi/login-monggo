@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './assets/scss/components/popup/auth/login.css';
-import './assets/scss/components/popup/auth/signup.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import './assets/scss/main.scss';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

@@ -19,7 +19,6 @@ class App extends Component {
       loginOpen: !this.state.loginOpen,
       registerOpen: (this.registerOpen ? false:false)
     });
-    console.log(this.state);
   }
 
   toggleRegister = () => {
